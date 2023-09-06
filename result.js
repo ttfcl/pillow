@@ -100,6 +100,6 @@ if((a1 === 'm' || a1 ==='w') && (a2 === 'm170' || a2 === 'm170179' || a2 === 'm1
     $("#section1").append('<div class="section1BoxContent"><div class="contentTitle">가누다 블루라벨 피아노</div><img src="image/icon/017.png" alt="" class="contentImg"><div class="contentExplain">#높은 베개</br>#높거나 적당히 높은 베개</br>#적당히 낮은 베개</br>#낮은 베개</br>#딱딱하거나 적당히 탄탄한 베개</br>#적당히 부드럽거나 푹신한 베개</br>#강한 목지지</br>#강하거나 적당한 목지지</br>#적당하거나 약한 목지지</div><a href="https://bit.ly/3UXJAYY" target="_blank">구매하러가기</a></div>')
 }
 if(count === 0) {
-    section1.textContent = section1.textContent + '해당없음'
+    $("#section1").append('<div class="section1BoxContent"><div class="contentTitle2">준비한 조건에 맞는 결과물이 없습니다. 아래 링크를 눌러 저희 쇼핑몰에서 확인해보세요.</div><a href="https://bit.ly/3UXJAYY" target="_blank">구매하러가기</a></div>')
 }
 

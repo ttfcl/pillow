@@ -71,6 +71,10 @@ body {
     margin-bottom: 10px;
     font-weight: 700;
 }
+.contentTitle2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 .contentImg {
     width: 90%;
     height: auto;
