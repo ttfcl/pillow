@@ -26,6 +26,9 @@
         <div class="answer" id="answer3">
           <div class="answer1">적당하거나 약간 약함</div>
         </div>
+        <div class="answer" id="answer4">
+          <div class="answer1">약한 목지지</div>
+        </div>
       </div>
     </div>
     <div class="prebutton" id="prebutton">
@@ -36,6 +39,7 @@
     let answer1 = document.querySelector("#answer1")
     let answer2 = document.querySelector("#answer2")
     let answer3 = document.querySelector("#answer3")
+    let answer4 = document.querySelector("#answer4")
     let prebutton = document.querySelector("#prebutton")
 
     prebutton.onclick = () => {
@@ -51,6 +55,10 @@
     }
     answer3.onclick = () => {
       localStorage.setItem('a5', '적당하거나약간약함')
+      location.href = "result.html"
+    }
+    answer4.onclick = () => {
+      localStorage.setItem('a5', '약한목지지')
       location.href = "result.html"
     }
   </script>
