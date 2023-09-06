@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "gFont";
+    src: url("../폰트/Pretendard-Light.ttf") format('truetype');
+    font-display: swap;
+    font-style: normal;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    word-break: keep-all;
+    font-family: "gFont";
+}
+
+body {
+    display: flex;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(image/bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section1Textbox {
+    margin-left: 10%;
+    max-width: 900px;
+    width: 95%;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+.section1Minititle {
+    font-size: 24px;
+    color: rgb(80, 80, 80);
+}
+.section1Maintitle {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.section1text {
+    margin-top: 20px;
+}
+.section1Button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    border: 1px solid green;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.section1Button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: 0.5s;
+}
+@media (max-width: 1200px) {
+    .section1Textbox {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .section1Button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@keyframes slidein {
+    from {
+        margin-top: 100px;
+        filter: opacity(0%);
+    }
+    to {
+        margin-top: 0px;
+        filter: opacity(100%);
+    }
+  }

@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "gFont";
+    src: url("../폰트/Pretendard-Light.ttf") format('truetype');
+    font-display: swap;
+    font-style: normal;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    word-break: keep-all;
+    font-family: 'gfont';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url(image/bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box {
+    padding-top: 50px;
+}
+.title {
+    font-size: 48px;
+    font-weight: 700;
+}
+.semititle {
+    font-size: 18px;
+    color: rgb(128, 128, 128);
+}
+.question {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.answerBox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.answer {
+    width: 100%;
+    max-width: 200px;
+    min-width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.answer1 {
+    width: 100%;
+    max-width: 200px;
+    min-width: 100px;
+    height: 150px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.answer1:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.616);
+    transition: 0.5s;
+}
+.progress {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 500px;
+}
+.questionBox {
+    animation: slidein;
+    animation-duration: 2s;
+}
+@keyframes slidein {
+    from {
+        margin-top: 50px;
+        filter: opacity(0%);
+    }
+    to {
+        margin-top: 0px;
+        filter: opacity(100%);
+    }
+  }
