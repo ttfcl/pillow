@@ -25,11 +25,18 @@
         </div>
       </div>
     </div>
-
+    <div class="prebutton" id="prebutton">
+      이전으로
+    </div>
   </div>
   <script>
     let answer1 = document.querySelector("#answer1")
     let answer2 = document.querySelector("#answer2")
+    let prebutton = document.querySelector("#prebutton")
+
+    prebutton.onclick = () => {
+      location.href = "index.html"
+    }
     answer1.onclick = () => {
       localStorage.setItem('a1', '남자')
       location.href = "test21.html"

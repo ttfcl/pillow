@@ -12,7 +12,7 @@
     <div class="title">베개탐험대 좋은 베개찾기</div>
     <div class="semititle">(정보는 별도로 저장되지 않습니다.)</div>
     <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-success" style="width: 5%">0%</div>
+      <div class="progress-bar bg-success" style="width: 40%">20%</div>
     </div>
     <div class="questionBox">
       <div class="question">Q2. 당신의 키는 얼마입니까?</div>
@@ -28,13 +28,20 @@
         </div>
       </div>
     </div>
+    <div class="prebutton" id="prebutton">
+      이전으로
+    </div>
 
   </div>
   <script>
     let answer1 = document.querySelector("#answer1")
     let answer2 = document.querySelector("#answer2")
     let answer3 = document.querySelector("#answer3")
+    let prebutton = document.querySelector("#prebutton")
 
+    prebutton.onclick = () => {
+      location.href = "test.html"
+    }
     answer1.onclick = () => {
       localStorage.setItem('a2', 'm170')
       location.href = "test3.html"

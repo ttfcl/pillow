@@ -12,7 +12,7 @@
     <div class="title">베개탐험대 좋은 베개찾기</div>
     <div class="semititle">(정보는 별도로 저장되지 않습니다.)</div>
     <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-success" style="width: 20%">15%</div>
+      <div class="progress-bar bg-success" style="width: 100%">마지막</div>
     </div>
     <div class="questionBox">
       <div class="question">Q5. 베개의 목지지가 어느 정도가 편하십니까?</div>
@@ -28,13 +28,19 @@
         </div>
       </div>
     </div>
-
+    <div class="prebutton" id="prebutton">
+      이전으로
+    </div>
   </div>
   <script>
     let answer1 = document.querySelector("#answer1")
     let answer2 = document.querySelector("#answer2")
     let answer3 = document.querySelector("#answer3")
+    let prebutton = document.querySelector("#prebutton")
 
+    prebutton.onclick = () => {
+      location.href = "test4.html"
+    }
     answer1.onclick = () => {
       localStorage.setItem('a5', '강력한목지지')
       location.href = "result.html"

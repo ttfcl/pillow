@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "gFont";
+    src: url("../폰트/Pretendard-Light.ttf") format('truetype');
+    font-display: swap;
+    font-style: normal;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    word-break: keep-all;
+    font-family: "gFont";
+}
+
+body {
+    display: flex;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(image/bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
