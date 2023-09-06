@@ -4,7 +4,7 @@ let a3 = localStorage.getItem('a3')
 let a4 = localStorage.getItem('a4')
 let a5 = localStorage.getItem('a5')
 let count = 0
-let section1 = document.querySelector("#section1")
+let section1 = document.querySelector(".section1")
 
 /* 원본
 
