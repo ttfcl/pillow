@@ -8,10 +8,28 @@
 </head>
 <body>
   <div class="section1">
-
+    <div class="section1Title">당신에게 이 베개를 추천합니다</div>
+    <div class="section1Box" id="section1">
+    </div>
+    <div class="prebutton" id="prebutton">
+      이전으로
+    </div>
+    <div class="prebutton" id="firstbutton">
+      처음으로
+    </div>
   </div>  
 
+  <script>
+    let prebutton = document.querySelector("#prebutton")
+    let firstbutton = document.querySelector("#firstbutton")
 
+    prebutton.onclick = () => {
+      location.href = "test5.html"
+    }
+    firstbutton.onclick = () => {
+      location.href = "index.html"
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="result.js"></script>
 </body>

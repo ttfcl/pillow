@@ -12,15 +12,15 @@
     <div class="title">베개탐험대 좋은 베개찾기</div>
     <div class="semititle">(정보는 별도로 저장되지 않습니다.)</div>
     <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-success" style="width: 5%">0%</div>
+      <div class="progress-bar bg-success" style="width: 20%">1/5</div>
     </div>
     <div class="questionBox">
       <div class="question">Q1. 당신의 성별은 무엇입니까?</div>
       <div class="answerBox">
-        <div class="answer" id="answer1">
+        <div class="answer" id="answer1" style="background-image: url(image/001.png);">
           <div class="answer1">남자</div>
         </div>
-        <div class="answer" id="answer2">
+        <div class="answer" id="answer2" style="background-image: url(image/002.png);">
           <div class="answer1">여자</div>
         </div>
       </div>
@@ -38,11 +38,11 @@
       location.href = "index.html"
     }
     answer1.onclick = () => {
-      localStorage.setItem('a1', '남자')
+      localStorage.setItem('a1', 'm')
       location.href = "test21.html"
     }
     answer2.onclick = () => {
-      localStorage.setItem('a1', '여자')
+      localStorage.setItem('a1', 'w')
       location.href = "test22.html"
     }
   </script>
