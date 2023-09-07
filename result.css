@@ -80,6 +80,7 @@ body {
 .contentImg {
     width: 90%;
     height: auto;
+    border-radius: 10px;
 }
 .contentExplain {
     width: 90%;
