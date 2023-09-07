@@ -13,10 +13,10 @@
     <div class="title">나만의 베개 찾기</div>
     <div class="semititle">(정보는 별도로 저장되지 않습니다.)</div>
     <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-success" style="width: 60%">3/5</div>
+      <div class="progress-bar bg-success" style="width: 60%">4/6</div>
     </div>
     <div class="questionBox">
-      <div class="question">Q3. 당신에게 적당한 높이의 베개는 무엇입니까?</div>
+      <div class="question">Q4. 당신에게 적당한 높이의 베개는 무엇입니까?</div>
       <div class="answerBox">
         <div class="answer" id="answer1" style="background-image: url(image/009.png);">
           <div class="answer1">높은베개</div>
@@ -44,12 +44,7 @@
     let prebutton = document.querySelector("#prebutton")
 
     prebutton.onclick = () => {
-      if(localStorage.getItem('a1') === 'm') {
-        location.href = "test21.html"
-      }
-      if(localStorage.getItem('a1') === 'w') {
-        location.href = "test22.html"
-      }
+      location.href = "test1.html"
     }
     answer1.onclick = () => {
       localStorage.setItem('a3', '높은베개')

@@ -3,6 +3,7 @@ let a2 = localStorage.getItem('a2')
 let a3 = localStorage.getItem('a3')
 let a4 = localStorage.getItem('a4')
 let a5 = localStorage.getItem('a5')
+let a0 = localStorage.getItem('a0')
 let count = 0
 let section1 = document.querySelector("#section1")
 
@@ -29,7 +30,7 @@ if((a1 === 'm' || a1 ==='w') && (a2 === 'm170' || a2 === 'm170179' || a2 === 'm1
     count++
     $("#section1").append('<div class="section1BoxContent"><div class="contentTitle">우유베개 플러스</div><img src="image/icon/003.jpg" alt="" class="contentImg"><a href="https://bit.ly/3UXJAYY" target="_blank">대여하러 가기</a></div>')
 }
-if((a1 === 'm' || a1 ==='w') && (a2 === 'm170' || a2 === 'w160' || a2 === 'w160169' || a2 === 'w170') && (a3 ==='적당히낮은베개' || a3 ==='낮은베개') && ( a4 === '딱딱한베개' || a4 === '적당히딱딱하거나탄탄함') && ( a5 ==='강력한목지지')) {
+if((a0 !== '옆으로') && (a1 === 'm' || a1 ==='w') && (a2 === 'm170' || a2 === 'w160' || a2 === 'w160169' || a2 === 'w170') && (a3 ==='적당히낮은베개' || a3 ==='낮은베개') && ( a4 === '딱딱한베개' || a4 === '적당히딱딱하거나탄탄함') && ( a5 ==='강력한목지지')) {
     console.log('솔래빗 알파베개')
     count++
     $("#section1").append('<div class="section1BoxContent"><div class="contentTitle">슬래빗 알파베개</div><img src="image/icon/004.jpg" alt="" class="contentImg"><a href="https://bit.ly/3UXJAYY" target="_blank">대여하러 가기</a></div>')
@@ -79,17 +80,17 @@ if((a1 === 'm') && (a2 === 'm170179' || 'm180') && (a3 === '높은베개' || a2 
     count++
     $("#section1").append('<div class="section1BoxContent"><div class="contentTitle">템퍼 오리지널 M</div><img src="image/icon/013.jpg" alt="" class="contentImg"><a href="https://bit.ly/3UXJAYY" target="_blank">대여하러 가기</a></div>')
 }
-if((a1 === 'm' || a1 ==='w') && (a2 === 'm170179' || a2 === 'm180' || a2 === 'w160169' || a2 === 'w170') && (a3 === '적당히높은베개' || a3 ==='적당히낮은베개' || a3 ==='낮은베개') && ( a4 === '적당히딱딱하거나탄탄함' || a4 === '적당히부드럽거나푹신함' || a4 ==='푹신한 베개') && ( a5 ==='강력한목지지' || a5 ==='적당하거나약간강함' || a5 ==='적당하거나약간약함')) {
+if((a0 !== '옆으로') && (a1 === 'm' || a1 ==='w') && (a2 === 'm170179' || a2 === 'm180' || a2 === 'w160169' || a2 === 'w170') && (a3 === '적당히높은베개' || a3 ==='적당히낮은베개' || a3 ==='낮은베개') && ( a4 === '적당히딱딱하거나탄탄함' || a4 === '적당히부드럽거나푹신함' || a4 ==='푹신한 베개') && ( a5 ==='강력한목지지' || a5 ==='적당하거나약간강함' || a5 ==='적당하거나약간약함')) {
     console.log('템퍼 밀레니엄 XS')
     count++
     $("#section1").append('<div class="section1BoxContent"><div class="contentTitle">템퍼 밀레니엄 XS</div><img src="image/icon/014.jpg" alt="" class="contentImg"><a href="https://bit.ly/3UXJAYY" target="_blank">대여하러 가기</a></div>')
 }
-if((a1 === 'm' || a1 ==='w') && (a2 === 'm170179' || a2 === 'm180' || a2 === 'w170') && (a3 === '높은베개' || a3 === '적당히높은베개' || a3 ==='적당히낮은베개') && ( a4 === '적당히딱딱하거나탄탄함' || a4 === '적당히부드럽거나푹신함' || a4 ==='푹신한 베개') && ( a5 ==='강력한목지지' || a5 ==='적당하거나약간강함' || a5 ==='적당하거나약간약함')) {
+if((a0 !== '옆으로') && (a1 === 'm' || a1 ==='w') && (a2 === 'm170179' || a2 === 'm180' || a2 === 'w170') && (a3 === '높은베개' || a3 === '적당히높은베개' || a3 ==='적당히낮은베개') && ( a4 === '적당히딱딱하거나탄탄함' || a4 === '적당히부드럽거나푹신함' || a4 ==='푹신한 베개') && ( a5 ==='강력한목지지' || a5 ==='적당하거나약간강함' || a5 ==='적당하거나약간약함')) {
     console.log('템퍼 밀리니엄 S')
     count++
     $("#section1").append('<div class="section1BoxContent"><div class="contentTitle">템퍼 밀레니엄 S</div><img src="image/icon/015.jpg" alt="" class="contentImg"><a href="https://bit.ly/3UXJAYY" target="_blank">대여하러 가기</a></div>')
 }
-if((a1 === 'm') && (a2 === 'm170179' || 'm180') && (a3 === '높은베개' || a2 === a3 === '적당히높은베개') && ( a4 === '적당히딱딱하거나탄탄함' || a4 === '적당히부드럽거나푹신함' || a4 ==='푹신한 베개') && ( a5 ==='강력한목지지' || a5 ==='적당하거나약간강함' || a5 ==='적당하거나약간약함')) {
+if((a0 !== '옆으로') && (a1 === 'm') && (a2 === 'm170179' || 'm180') && (a3 === '높은베개' || a2 === a3 === '적당히높은베개') && ( a4 === '적당히딱딱하거나탄탄함' || a4 === '적당히부드럽거나푹신함' || a4 ==='푹신한 베개') && ( a5 ==='강력한목지지' || a5 ==='적당하거나약간강함' || a5 ==='적당하거나약간약함')) {
     console.log('템퍼 밀리니엄 M')
     count++
     $("#section1").append('<div class="section1BoxContent"><div class="contentTitle">템퍼 밀레니엄 M</div><img src="image/icon/016.jpg" alt="" class="contentImg"><a href="https://bit.ly/3UXJAYY" target="_blank">대여하러 가기</a></div>')

@@ -13,54 +13,52 @@
     <div class="title">나만의 베개 찾기</div>
     <div class="semititle">(정보는 별도로 저장되지 않습니다.)</div>
     <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-success" style="width: 80%">5/6</div>
+      <div class="progress-bar bg-success" style="width: 40%">3/6</div>
     </div>
     <div class="questionBox">
-      <div class="question">Q5. 베개의 단단한 정도가 어느것이 편하십니까?</div>
+      <div class="question">Q3. 당신의  수면 자세는 무엇입니까?</div>
       <div class="answerBox">
-        <div class="answer" id="answer1" style="background-image: url(image/013.png);">
-          <div class="answer1">딱딱한 베개</div>
+        <div class="answer" id="answer1" style="background-image: url(image/003.png);">
+          <div class="answer1">정자세</div>
         </div>
-        <div class="answer" id="answer2" style="background-image: url(image/012.png);">
-          <div class="answer1">적당히 딱딱하거나 탄탄함</div>
+        <div class="answer" id="answer2" style="background-image: url(image/004.png);">
+          <div class="answer1">옆으로</div>
         </div>
-        <div class="answer" id="answer3" style="background-image: url(image/011.png);">
-          <div class="answer1">적당히 부드럽거나 푹신함</div>
-        </div>
-        <div class="answer" id="answer4" style="background-image: url(image/010.png);">
-          <div class="answer1">푹신한 베개</div>
+        <div class="answer" id="answer3" style="background-image: url(image/005.png);">
+          <div class="answer1">정자세 혹은 옆으로</div>
         </div>
       </div>
     </div>
     <div class="prebutton" id="prebutton">
       이전으로
     </div>
+
   </div>
   <script>
     let answer1 = document.querySelector("#answer1")
     let answer2 = document.querySelector("#answer2")
     let answer3 = document.querySelector("#answer3")
-    let answer4 = document.querySelector("#answer4")
     let prebutton = document.querySelector("#prebutton")
 
     prebutton.onclick = () => {
-      location.href = "test3.html"
+      if(localStorage.getItem('a1') === 'm') {
+        location.href = "test21.html"
+      }
+      if(localStorage.getItem('a1') === 'w') {
+        location.href = "test22.html"
+      }
     }
     answer1.onclick = () => {
-      localStorage.setItem('a4', '딱딱한베개')
-      location.href = "test5.html"
+      localStorage.setItem('a0', '정자세')
+      location.href = "test3.html"
     }
     answer2.onclick = () => {
-      localStorage.setItem('a4', '적당히딱딱하거나탄탄함')
-      location.href = "test5.html"
+      localStorage.setItem('a0', '옆으로')
+      location.href = "test3.html"
     }
     answer3.onclick = () => {
-      localStorage.setItem('a4', '적당히부드럽거나푹신함')
-      location.href = "test5.html"
-    }
-    answer4.onclick = () => {
-      localStorage.setItem('a4', '푹신한 베개')
-      location.href = "test5.html"
+      localStorage.setItem('a0', '정자세')
+      location.href = "test3.html"
     }
   </script>
 
