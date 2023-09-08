@@ -170,7 +170,7 @@ if((a1 === 'm' || a1 ==='w') && (a2 === 'm170' || a2 === 'm170179' || a2 === 'm1
 
 
 if(count === 0) {
-    $("#section1").append('<div class="section1BoxContent"><div class="contentTitle2">조건에 맞는 결과값이 없습니다. 조건을 다시 설정해 보세요.</div><a href="https://bit.ly/3UXJAYY" target="_blank">대여하러 가기</a></div>')
+    $("#section1").append('<div class="section1BoxContent"><div class="contentTitle2">조건에 맞는 결과값이 없습니다. 조건을 다시 설정해 보세요.</div>')
 }
 
 
